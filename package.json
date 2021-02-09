@@ -1,5 +1,5 @@
 {
-  "name": "foto-senai",
+  "name": "senai-dezoito",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,7 +9,13 @@
   },
   "dependencies": {
     "next": "10.0.6",
+    "pageprogress": "^1.1.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-inline-react-svg": "^1.1.2",
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
