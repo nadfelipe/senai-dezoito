@@ -5,13 +5,13 @@ const Button = styled.div`
 `;
 
 Button.NextPage = styled.div`
+  display: flex;
   font-family: Jost, sans-serif;
   font-weight: 600;
   font-size: 2rem;
   color: #5D3C74;
   width: 40%;
   height: 25%;
-  background-color: pink;
 `;
 
 export default Button;

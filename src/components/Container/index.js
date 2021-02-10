@@ -10,8 +10,7 @@ const Container = styled.div`
 
 Container.Titles = styled.div`
   font-family: Faustina, serif;
-  height: 60%;
-  background-color: greenyellow;
+  height: 35%;
 `;
 
 Container.Fixed = styled.div`
@@ -22,7 +21,6 @@ Container.Fixed = styled.div`
   margin-top: 10%;
   position: fixed;
   left: 17%;
-  background-color: green;
 `;
 
 export default Container;

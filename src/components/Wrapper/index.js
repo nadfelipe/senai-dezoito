@@ -3,8 +3,7 @@ import React from  'react';
 
 const WrapperIndex = styled.div`
     width: 90vw;
-    min-height: 160vh;
-    background-color: yellowgreen;
+    min-height: 100vh;
 `;
 
 

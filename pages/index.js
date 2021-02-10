@@ -10,13 +10,9 @@ import Paragraph from '../src/components/Paragraph';
 import WrapperHome from '../src/components/Wrapper';
 import Button from '../src/components/Button';
 import Link from '../src/components/Link';
+import Glitch from '../src/components/Glitch';
 
-const InitialH1 = styled.h1`
-  color: #5D3C74;
-  font-weight: 600;
-  font-size: 14rem;
-  line-height: 100%;
-`;
+
 
 const InitialH2 = styled.h2`
   font-style: italic;
@@ -37,7 +33,9 @@ export default function Home() {
       <WrapperHome>
         <Container.Fixed>
           <Container.Titles>
-            <InitialH1>SENAI</InitialH1>
+            <Glitch>
+              SENAI
+            </Glitch>
             <InitialH2>18 Anos</InitialH2>
           </Container.Titles>
           <Button.NextPage>
@@ -51,7 +49,7 @@ export default function Home() {
         </Container.Fixed>
         <Paragraph 
           childrenH3='A Escola SENAI De Informática está completando 18 anos!'
-          childrenP='Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque laoreet, erat eu vestibulum rutrum, metus nunc porttitor est, id ullamcorper ipsum mi in nisi. Vivamus cursus lacus ut sem tristique tristique. Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque laoreet, erat eu vestibulum rutrum, metus nunc porttitor est, id ullamcorper ipsum mi in nisi. Vivamus cursus lacus ut sem tristique tristique. Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Vivamus cursus lacus ut sem tristique tristique. Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Vivamus cursus lacus ut sem tristique tristique. Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Vivamus cursus lacus ut sem tristique tristique. Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.Duis at aliquam orci. Nullam consectetur condimentum leo sed convallis.'
+          childrenP='Em comemoração à tragetória dos alunos e funcionários nessa unidade, o pessoal da primeira turma do Técnico em Multimídia elaborou projetos de fotografia com essa temática. Com essa seleção de fotos, buscamos mostrar a relação entre as pessoas e o ambiente que formam essa escola.'
         />
       </WrapperHome>
     </Container>
