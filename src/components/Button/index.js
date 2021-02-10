@@ -10,7 +10,8 @@ Button.NextPage = styled.div`
   font-size: 2rem;
   color: #5D3C74;
   width: 40%;
-  height: 10%;
+  height: 25%;
+  background-color: pink;
 `;
 
 export default Button;

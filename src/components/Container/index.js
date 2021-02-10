@@ -11,16 +11,18 @@ const Container = styled.div`
 Container.Titles = styled.div`
   font-family: Faustina, serif;
   height: 60%;
+  background-color: greenyellow;
 `;
 
-Container.Right = styled.div`
+Container.Fixed = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 700px;
+  height: 50%;
   margin-top: 10%;
   position: fixed;
   left: 17%;
+  background-color: green;
 `;
 
 export default Container;
