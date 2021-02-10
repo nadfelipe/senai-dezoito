@@ -15,13 +15,13 @@ const glitch = keyframes`
 
 const glitchTop = keyframes`
     2%,64%{
-        transform: translate(2px,-2px);
+        transform: translate(2px,0px);
     }
     4%,60%{
-        transform: translate(-2px,2px);
+        transform: translate(0px,2px);
     }
     62%{
-        transform: translate(13px,-1px) skew(-13deg); 
+        transform: translate(10px,-5px) skew(-10deg); 
     }
 `;
 
@@ -42,7 +42,7 @@ const GlitchWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: ${glitch} 0.5s linear infinite;
+    animation: ${glitch} 0.8s linear infinite;
     &:before, &:after{
         content: 'SENAI';
         position: absolute;
@@ -53,11 +53,11 @@ const GlitchWrapper = styled.div`
         line-height: 100%;
     };
     &:before{
-        animation: ${glitchTop} 1s linear infinite;
+        animation: ${glitchTop}  1s linear infinite;
         clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
     };
     &:after{
-        animation: ${glitchBottom} 1.5s linear infinite;
+        animation: ${glitchBottom} 1.2s linear infinite;
         clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
     };
 `;

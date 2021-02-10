@@ -9,8 +9,6 @@ const Paragrafo = styled.div`
     justify-content: space-between;
     margin-top: 20%;
     font-family: Jost, sans-serif;
-    position: absolute;
-    right: 20%;
     padding: 1% 0 4% 0;
 `;
 

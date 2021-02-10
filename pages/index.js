@@ -1,15 +1,12 @@
 import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import ImgContinuar from '../src/public/continuar';
-import styles from '../styles/Home.module.css';
 import styled from 'styled-components';
 
 import Container from '../src/components/Container';
 import Paragraph from '../src/components/Paragraph';
 import WrapperHome from '../src/components/Wrapper';
 import Button from '../src/components/Button';
-import Link from '../src/components/Link';
 import Glitch from '../src/components/Glitch';
 
 
@@ -24,7 +21,7 @@ const InitialH2 = styled.h2`
 
 export default function Home() {
   return (
-    <Container className={styles.home}>
+    <Container>
       <Head>
         <title>SENAI 18</title>
         <link rel="icon" href='../src/public/favicon.ico' />
@@ -38,14 +35,11 @@ export default function Home() {
             </Glitch>
             <InitialH2>18 Anos</InitialH2>
           </Container.Titles>
-          <Button.NextPage>
-            <Link
-              href={`/home`}
-            >
-              continuar
-              <ImgContinuar/>
-            </Link>
-          </Button.NextPage>
+          <Button 
+              childrenP='continuar'
+              urlImg='/../src/public/img/continuar.svg'
+          >
+          </Button>
         </Container.Fixed>
         <Paragraph 
           childrenH3='A Escola SENAI De Informática está completando 18 anos!'

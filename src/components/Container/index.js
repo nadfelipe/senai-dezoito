@@ -6,6 +6,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #1E1127;
 `;
 
 Container.Titles = styled.div`
@@ -17,10 +18,8 @@ Container.Fixed = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 50%;
-  margin-top: 10%;
-  position: fixed;
-  left: 17%;
+  margin-bottom: 15%;
+  padding: 5%;
 `;
 
 export default Container;
