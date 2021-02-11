@@ -37,7 +37,6 @@ export default function Home() {
           </Container.Titles>
           <Button 
               childrenP='continuar'
-              urlImg='/../src/public/img/continuar.svg'
           >
           </Button>
         </Container.Fixed>

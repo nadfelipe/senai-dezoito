@@ -13,18 +13,18 @@ const Paragrafo = styled.div`
 `;
 
 const Subtitulo = styled.h3`
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: #C4AED4;
-    line-height: 120%;
+    line-height: 110%;
     font-weight: 700;
 `
 const Texto = styled.p`
-    max-width: 90%;
-    font-size: 2rem;
+    max-width: 92%;
+    font-size: 1.75rem;
     color: #5D3C74;
-    line-height: 115%;
-    letter-spacing: -3.5%;
-    font-weight: 500;
+    line-height: 135%;
+    letter-spacing: -3%;
+    font-weight: 400;
 `
 
 

@@ -3,8 +3,7 @@ import styled from 'styled-components';
 
 import Link from '../Link/index';
 import Image from 'next/image';
-
-const ImgContinuarPath = '/../../public/img/continuar.png'
+import ImgContinuar from '../../public/img/svg/continuar.svg';
 
 const Button = styled.div`
 `;
@@ -21,13 +20,25 @@ Button.NextPage = styled.div`
   margin-top: 10%;
 `;
 
-export default function ButtonContinue({ childrenP, urlImg }) {
+const Container = styled.div`
+  padding-left: 15%;
+  margin-top: -5%;
+  transition: 0.3s;
+  &:hover{
+    padding-left: 20%;
+  }
+`;
+
+export default function ButtonContinue({ childrenP }) {
   return (
     <Button.NextPage>
       <Link
       href={`/home`}
       >
         <p>{childrenP}</p>
+        <Container>
+          <ImgContinuar />
+        </Container>
       </Link>
     </Button.NextPage>
   );
