@@ -8,6 +8,15 @@ const Container = styled.div`
   align-items: center;
 `;
 
+Container.DragScroll = styled.div`
+  min-height: 100vh;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+`;
+
 Container.Titles = styled.div`
   font-family: Faustina, serif;
   height: 35%;

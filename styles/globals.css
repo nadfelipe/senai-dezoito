@@ -7,6 +7,23 @@ body, div, h1, h2, h3, p {
   margin: 0;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1E1127;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C4AED4;
+  border-radius: 2px;;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5D3C74;
+}
+
 a {
   color: inherit;
   text-decoration: none;

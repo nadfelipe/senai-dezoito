@@ -24,7 +24,7 @@ const Texto = styled.p`
     color: #5D3C74;
     line-height: 135%;
     letter-spacing: -3%;
-    font-weight: 400;
+    font-weight: 500;
 `
 
 

@@ -20,6 +20,7 @@ const InitialH2 = styled.h2`
   line-height: 100%;
 `;
 
+
 export default function Home() {
   return (
     <Container className={styles.home}>
