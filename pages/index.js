@@ -2,6 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import styled from 'styled-components';
+import styles from '../styles/Home.module.css';
 
 import Container from '../src/components/Container';
 import Paragraph from '../src/components/Paragraph';
@@ -21,7 +22,7 @@ const InitialH2 = styled.h2`
 
 export default function Home() {
   return (
-    <Container>
+    <Container className={styles.home}>
       <Head>
         <title>SENAI 18</title>
         <link rel="icon" href='../src/public/favicon.ico' />

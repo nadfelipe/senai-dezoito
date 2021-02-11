@@ -17,16 +17,12 @@ Button.NextPage = styled.div`
   color: #5D3C74;
   width: 40%;
   height: 25%;
-  margin-top: 10%;
+  margin-top: 30%;
 `;
 
 const Container = styled.div`
   padding-left: 15%;
   margin-top: -5%;
-  transition: 0.3s;
-  &:hover{
-    padding-left: 20%;
-  }
 `;
 
 export default function ButtonContinue({ childrenP }) {
