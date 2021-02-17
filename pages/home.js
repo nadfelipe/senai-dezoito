@@ -2,44 +2,15 @@ import React, { useState, useEffect } from 'react';
 import styles from '../styles/Home.module.css';
 import Head from 'next/head';
 import styled from 'styled-components';
-import Image from 'next/image'
 
+import Image from '../src/components/Image'
 import Container from '../src/components/Container';
 import ArrowScroll from '../src/components/ArrowDown'
 import ReadingProgress from '../src/components/PageProgress'
-import Banner from '../src/components/Banner'
 
-
-const Section1 = styled.section`
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(${(props)=>props.imgUrl});
-    background-repeat: no-repeat;
-    background-position: 0px -1px;
-    background-size: 100% ;
-`;
-
-Section1.Content = styled.section`
-    width: 80%;
-    min-height: 100vh;
-    background: blue;
-`;
-
-const Section2 = styled.section`
-    width: 80vw;
-    min-height: 100vh;
-    background: green;
-`;
-const Section3 = styled.section`
-    width: 80vw;
-    min-height: 100vh;
-    background: yellowgreen;
-`;
+import { Banner, Section1, Section2, Paragraph } from '../src/components/Home'
 
 export default function HomePage(){
-    const ref = React.createRef();
     return(
         <>
             <ReadingProgress />
@@ -62,16 +33,24 @@ export default function HomePage(){
                         <Image
                             src='/img/fotos/foto1-section1.png'
                             alt="Foto da giovanna"
-                            width="500"
-                            height="500"
-                        >
-
-                        </Image>
+                            width="676"
+                            height="451"
+                            style={{pointerEvents: "none"}}
+                        />
+                        <Paragraph>
+                            <Paragraph.H3 >Lorem ipsum dolor sit</Paragraph.H3>
+                            <Paragraph.P>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque laoreet, erat eu vestibulum</Paragraph.P>
+                        </Paragraph>
                     </Section1.Content>
                 </Section1>
-                    
-                <Section2></Section2>
-                <Section3></Section3>
+                <Section2 imgUrl={'./img/svg/fundo-section2.svg'}>
+                    <Section2.Content imgBgUrl={'./img/svg/fundo-section2-content.svg'}>
+                        <Paragraph toLeft={true}>
+                            <Paragraph.H3 >Lorem ipsum dolor sit</Paragraph.H3>
+                            <Paragraph.P>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque laoreet, erat eu vestibulum</Paragraph.P>
+                        </Paragraph>
+                    </Section2.Content>
+                </Section2>
             </Container>
         </>
     )
