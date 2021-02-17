@@ -51,8 +51,8 @@ const Div = styled.div`
         animation: ${elasticus} 1.2s cubic-bezier(1, 0, 0, 1) infinite;
         position: absolute;
         top: 0px;
-        left: 50%;
-        margin-left: 5px;
+        left: 51.56%;
+        margin-left: 4.8px;
         width: 4px;
         height: 154px;
         background: #5D3C74;

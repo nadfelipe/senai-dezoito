@@ -27,7 +27,6 @@ export default function Home() {
       <Head>
         <title>SENAI 18</title>
         <link rel="icon" href='../src/public/favicon.ico' />
-        <meta charset="utf-8"></meta>
       </Head>
       <WrapperHome>
         <Container.Fixed>

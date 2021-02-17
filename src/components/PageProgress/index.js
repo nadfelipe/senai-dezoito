@@ -12,7 +12,7 @@ const ReadingProgressBar = styled.div`
     background-color: #E39600;
     position: fixed;
     z-index: 1;
-    height: 4px;
+    height: 6px;
 `;
 
 const ReadingProgress = ({target}) => {
