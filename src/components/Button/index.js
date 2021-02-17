@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 import Link from '../Link/index';
 import Image from 'next/image';
-import ImgContinuar from '../../public/img/svg/continuar.svg';
+
 
 const Button = styled.div`
 `;
@@ -25,7 +25,11 @@ const Container = styled.div`
   margin-top: -5%;
 `;
 
-export default function ButtonContinue({ childrenP }) {
+const ImgButton = styled.div`
+  background-image: url(${(props)=>props.imgUrl});
+`;
+
+export default function ButtonContinue({ childrenP, imgUrl }) {
   return (
     <Button.NextPage>
       <Link
@@ -33,7 +37,7 @@ export default function ButtonContinue({ childrenP }) {
       >
         <p>{childrenP}</p>
         <Container>
-          <ImgContinuar />
+          <ImgButton imgUrl={imgUrl}/>
         </Container>
       </Link>
     </Button.NextPage>

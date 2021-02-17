@@ -1,5 +1,5 @@
 .home{
-    background-image: url('../src/public/img/image-home.png');
+    background-image: url('../public/img/image-home.png');
     background-repeat: no-repeat;
     background-position: 60% 40%;
     background-attachment: fixed;

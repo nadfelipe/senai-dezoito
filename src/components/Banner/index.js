@@ -1,13 +1,12 @@
 import styled from 'styled-components';
 
+
 const Banner = styled.div`
     width: 100vw;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #FEF8EA;
-    background-image: url('../../public/img/fotos/foto-banner.svg');
-    background-position: center;
 `;
 Banner.Div = styled.section`
     width: 80%;
@@ -15,14 +14,15 @@ Banner.Div = styled.section`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: url('../../public/img/fotos/foto-banner.svg');
-    background-position: center;
+    background-image: url(${(props)=>props.imgUrl1}), url(${(props)=>props.imgUrl2});
+    background-position: 10% 95%, 85% 10%;
+    background-repeat: no-repeat;
+    background-size: 60%, 35%;
 `;
 
 Banner.Textos = styled.div`
     max-width: 60%;
     align-self: flex-start;
-    margin-top: 5%;
 `;
 
 Banner.H1 = styled.h1`
