@@ -4,6 +4,7 @@ import NextImage from 'next/image'
 
 const ImageStyle = styled.div`
     pointer-events: none;
+    z-index: 1;
 `;
 
 

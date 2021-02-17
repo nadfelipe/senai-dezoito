@@ -5,13 +5,14 @@ const ReadingProgressWrapper = styled.div`
     position: fixed;
     height: 2px;
     top: 0;
+    z-index: 999;
     width: 100%;
 `;
 const ReadingProgressBar = styled.div`
     width: ${props => props.width};
     background-color: #E39600;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     height: 6px;
 `;
 
