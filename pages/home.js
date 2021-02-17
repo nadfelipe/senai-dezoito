@@ -20,7 +20,7 @@ export default function HomePage(){
             </Head>
             <Container className={styles.homepage}>
                 <Banner>
-                    <Banner.Div imgUrl1={'./img/fotos/foto1-banner.svg'} imgUrl2={'./img/fotos/foto2-banner.png'}>
+                    <Banner.Div imgUrl1={'./img/fotos/foto1-banner.png'} imgUrl2={'./img/fotos/foto2-banner.png'}>
                         <Banner.Textos>
                             <Banner.H1>SENAI INFO</Banner.H1>
                             <Banner.H2>#dezoitou</Banner.H2>
