@@ -16,6 +16,9 @@ Container.Content = styled(Container)`
 Container.Titles = styled.div`
   font-family: Faustina, serif;
   height: 35%;
+  @media(max-width: 1600px) {
+    height: 25%;
+  }
 `;
 
 Container.Fixed = styled.div`
@@ -23,7 +26,11 @@ Container.Fixed = styled.div`
   flex-direction: column;
   justify-content: space-between;
   margin-bottom: 5%;
-  padding: 5%; 
+  padding: 5%;
+  @media(max-width: 1600px) {
+    margin-bottom: 10%;
+    padding: 0 5% 0 0;
+  }
 `;
 
 

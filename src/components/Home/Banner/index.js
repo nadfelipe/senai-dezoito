@@ -18,6 +18,9 @@ Banner.Div = styled.section`
     background-position: 10% 95%, 85% 10%;
     background-repeat: no-repeat;
     background-size: 60%, 35%;
+    @media(max-width: 1800px) {
+        background-size: 65%, 35%;
+    }
 `;
 
 Banner.Textos = styled.div`
@@ -30,6 +33,9 @@ Banner.H1 = styled.h1`
     font-weight: 500;
     font-size: 10rem;
     color: #5D3C74;
+    @media(max-width: 1800px) {
+        font-size: 7.2rem;
+    }
 `;
 
 Banner.H2 = styled.h2`
@@ -49,6 +55,13 @@ Banner.H2 = styled.h2`
         margin-top: 2%;
         margin-left: 0.3%;
         opacity: 0.5;
+        @media(max-width: 1800px) {
+            width: 180px;
+            height: 15px;
+        }
+    }
+    @media(max-width: 1800px) {
+        font-size: 2.5rem;
     }
 `;
 

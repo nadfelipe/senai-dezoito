@@ -8,6 +8,9 @@ const WrapperIndex = styled.div`
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+    @media(max-width: 1600px) {
+        height: 100vh;
+    }
 `;
 
 

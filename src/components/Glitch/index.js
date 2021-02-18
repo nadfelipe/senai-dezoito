@@ -51,6 +51,9 @@ const GlitchWrapper = styled.div`
         font-weight: 600;
         font-size: 14rem;
         line-height: 100%;
+    @media(max-width: 1600px) {
+        font-size: 10rem;
+    }
     };
     &:before{
         animation: ${glitchTop}  1s linear infinite;
@@ -67,6 +70,9 @@ const Glitch = styled.h1`
     font-weight: 600;
     font-size: 14rem;
     line-height: 100%;
+    @media(max-width: 1600px) {
+        font-size: 10rem;
+    }
 `;
 
 export default function GlitchAnim({ children }){

@@ -17,6 +17,9 @@ Paragraph.H3 = styled.h3`
     font-size: 4rem;
     text-transform: uppercase;
     width: 90%;
+    @media(max-width: 1800px) {
+        font-size: 3rem;
+    }
 `;
 
 Paragraph.P = styled.p`
@@ -25,6 +28,10 @@ Paragraph.P = styled.p`
     color: #5D3C74;
     font-size: 1.6rem;
     width: 80%;
+    @media(max-width: 1800px) {
+        font-size: 1.5rem;
+        width: 70%;
+    }
 `;
 
 export default Paragraph

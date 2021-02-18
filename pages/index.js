@@ -17,6 +17,9 @@ const InitialH2 = styled.h2`
   font-size: 4rem;
   color: #C4AED4;
   line-height: 100%;
+  @media(max-width: 1600px) {
+    font-size: 2rem;
+  }
 `;
 
 

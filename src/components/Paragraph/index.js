@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import React from  'react';
 
 const Paragrafo = styled.div`
-    max-width: 25%;
+    width: 25%;
     min-height: 50%;
     display: flex;
     flex-direction: column;
@@ -10,6 +10,12 @@ const Paragrafo = styled.div`
     margin-top: 20%;
     font-family: Jost, sans-serif;
     padding: 1% 0 4% 0;
+    @media(max-width: 1600px) {
+        margin-top: 10%;
+        width: 35%;
+        text-align: right;
+        align-items: flex-end;
+    }
 `;
 
 const Subtitulo = styled.h3`
@@ -17,6 +23,9 @@ const Subtitulo = styled.h3`
     color: #C4AED4;
     line-height: 110%;
     font-weight: 700;
+    @media(max-width: 1600px) {
+        font-size: 2rem;
+    }
 `
 const Texto = styled.p`
     max-width: 92%;
@@ -25,6 +34,9 @@ const Texto = styled.p`
     line-height: 135%;
     letter-spacing: -3%;
     font-weight: 500;
+    @media(max-width: 1600px) {
+        font-size: 1.4rem;
+    }
 `
 
 

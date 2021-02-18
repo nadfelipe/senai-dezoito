@@ -19,6 +19,9 @@ Section2.Content = styled.section`
     background-image: url(${(props)=>props.imgBgUrl});
     background-repeat: no-repeat;
     background-position: right center;
+    @media(max-width: 1800px) {
+        background-size: 65%;
+    }
 `;
 
 
