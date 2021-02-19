@@ -19,6 +19,7 @@
   "devDependencies": {
     "@babel/core": "^7.12.13",
     "babel-plugin-inline-react-svg": "^1.1.2",
-    "babel-plugin-styled-components": "^1.12.0"
+    "babel-plugin-styled-components": "^1.12.0",
+    "file-loader": "^6.2.0"
   }
 }
