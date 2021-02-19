@@ -21,7 +21,7 @@ export default function HomePage(){
             </Head>
             <Container className={styles.homepage}>
                 <Banner>
-                    <Banner.Div imgUrl1={'./img/pictures/foto1-banner.png'} imgUrl2={'./img/pictures/foto2-banner.png'}>
+                    <Banner.Div imgUrl1={'./img/pictures/pre-gallery/foto1-banner.png'} imgUrl2={'./img/pictures/pre-gallery/foto2-banner.png'}>
                         <Banner.Textos>
                             <Banner.H1>SENAI INFO</Banner.H1>
                             <Banner.H2>#dezoitou</Banner.H2>
@@ -32,7 +32,7 @@ export default function HomePage(){
                 <Section1 imgUrl={'./img/svg/fundo-section1.svg'}>
                     <Section1.Content>
                         <Image
-                            src='/img/pictures/foto1-section1.png'
+                            src='/img/pictures/pre-gallery/foto1-section1.png'
                             alt="Foto da giovanna"
                             width="676"
                             height="451"

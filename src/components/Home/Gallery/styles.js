@@ -11,15 +11,15 @@ export const GalleryDiv = styled.div`
 export const GalleryContent = styled.section`
     width: 80%;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 15px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(5, 580px) 800px repeat(4, 580px) 800px repeat(2, 580px) 800px;
     grid-template-areas: 
-    "img01 img02"
-    "img01 img03"
-    "img04 img05"
-    "img06 img07"
-    "img08 img09"
+    "img1 img2"
+    "img1 img3"
+    "img4 img5"
+    "img6 img7"
+    "img8 img9"
     "img10 img10"
     "img11 img12"
     "img13 img12"
@@ -34,7 +34,6 @@ export const GalleryContent = styled.section`
 
 GalleryContent.Img = styled.div`
     grid-area: ${(props) => props.imgID};
-    background-color: blue;
 `;
 
 

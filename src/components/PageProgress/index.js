@@ -21,7 +21,6 @@ const ReadingProgress = ({target}) => {
     const scrollListener = (target) => {
         var scrollMaxY = window.scrollMaxY || (document.documentElement.scrollHeight - document.documentElement.clientHeight)
         setReadingProgress(`${Math.floor((window.scrollY || window.scrollTop || document.getElementsByTagName("html")[0].scrollTop) / scrollMaxY * 100)}%`);
-        console.log(readingProgress)
     };
     
     useEffect(() => {
