@@ -13,7 +13,7 @@ export const GalleryContent = styled.section`
     display: grid;
     grid-gap: 15px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(5, 580px) 800px repeat(4, 580px) 800px repeat(2, 580px) 800px;
+    grid-template-rows: repeat(5, 580px) 800px repeat(4, 580px) 800px 580px 800px;
     grid-template-areas: 
     "img1 img2"
     "img1 img3"
@@ -27,8 +27,7 @@ export const GalleryContent = styled.section`
     "img15 img16"
     "img17 img17"
     "img18 img19"
-    "img20 img21"
-    "img22 img22";
+    "img20 img20";
     justify-content: center;
 `;
 

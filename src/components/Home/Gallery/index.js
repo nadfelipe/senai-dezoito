@@ -1,38 +1,15 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Lightbox } from "react-modal-image";
 import Image from 'next/image';
 
 import ImageContainer from "./Image";
 import { GalleryDiv, GalleryContent } from "./styles";
 
-// const srcImg1 = '/img/pictures/Img01.svg'
-// const srcImg2 = '/img/pictures/Img02.svg'
-// const srcImg3 = '/img/pictures/Img03.svg'
-// const srcImg4 = '/img/pictures/Img04.svg'
-// const srcImg5 = '/img/pictures/Img05.svg'
-// const srcImg6 = '/img/pictures/Img06.svg'
-// const srcImg7 = '/img/pictures/Img07.svg'
-// const srcImg8 = '/img/pictures/Img08.svg'
-// const srcImg9 = '/img/pictures/Img09.svg'
-// const srcImg10 = '/img/pictures/Img10.svg'
-// const srcImg11 = '/img/pictures/Img11.svg'
-// const srcImg12 = '/img/pictures/Img12.svg'
-// const srcImg13 = '/img/pictures/Img13.svg'
-// const srcImg14 = '/img/pictures/Img14.svg'
-// const srcImg15 = '/img/pictures/Img15.svg'
-// const srcImg16 = '/img/pictures/Img16.svg'
-// const srcImg17 = '/img/pictures/Img17.svg'
-// const srcImg18 = '/img/pictures/Img18.svg'
-// const srcImg19 = '/img/pictures/Img19.svg'
-// const srcImg20 = '/img/pictures/Img20.svg'
-// const srcImg21 = '/img/pictures/Img21.svg'
-// const srcImg22 = '/img/pictures/Img22.svg'
-
 export default function Gallery(){
     const Picture = (img) => {
         return (
-            <ImageContainer type={img.type} onClick={() => setLightbox(img.src)}>
-                <Image objectFit="cover" src={img.src} alt={img.alt} layout="fill" quality={100} />
+            <ImageContainer onClick={() => setLightbox(img.src)}>
+                <Image objectFit="cover" src={img.src} alt={img.alt} layout="fill" quality={1} priority={img.priority || false}/>
             </ImageContainer>
         )
     }
@@ -40,153 +17,175 @@ export default function Gallery(){
     const [lightbox, setLightbox] = useState(null);
 
     let images = []
-    for(let i=0; i<23; i++){
+    for(let i=0; i<21; i++){
         images.push(
             <GalleryContent.Img key={i} imgID={`img${i}`}>
                 <Picture 
                     src={`/img/pictures/Img${i}.svg`}
-                    alt=""
+                    alt={`Imagem ${i}`}
                 />
             </GalleryContent.Img>
         )
     }
 
+
     return(
         <div>
-            {lightbox ? <Lightbox large={lightbox} onClose={() => setLightbox(false)} /> : null}
+            {lightbox ? <Lightbox hideZoom={true} large={lightbox} onClose={() => setLightbox(false)} /> : null}
             
             <GalleryDiv>
                 <GalleryContent>
                     {images}
-                    {/* <GalleryContent.Img imgID='img01'>
+                    {/* <GalleryContent.Img imgID="img1">
                         <Picture 
-                            src={srcImg1}
+                            src="/img/pictures/Img1.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img02'>
+                    
+                    <GalleryContent.Img imgID="img2">
                         <Picture 
-                            src={srcImg2}
+                            src="/img/pictures/Img2.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img03'>
+
+                    <GalleryContent.Img imgID="img3">
                         <Picture 
-                            src={srcImg3}
+                            src="/img/pictures/Img3.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img04'>
+
+                    <GalleryContent.Img imgID="img4">
                         <Picture 
-                            src={srcImg4}
+                            src="/img/pictures/Img4.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img05'>
+
+                    <GalleryContent.Img imgID="img5">
                         <Picture 
-                            src={srcImg5}
+                            src="/img/pictures/Img5.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img06'>
+
+                    <GalleryContent.Img imgID="img6">
                         <Picture 
-                            src={srcImg6}
+                            src="/img/pictures/Img6.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img07'>
+
+                    <GalleryContent.Img imgID="img7">
                         <Picture 
-                            src={srcImg7}
+                            src="/img/pictures/Img7.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img08'>
+                    
+                    <GalleryContent.Img imgID="img8">
                         <Picture 
-                            src={srcImg8}
+                            src="/img/pictures/Img8.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img09'>
+
+                    <GalleryContent.Img imgID="img9">
                         <Picture 
-                            src={srcImg9}
+                            src="/img/pictures/Img9.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img10'>
+
+                    <GalleryContent.Img imgID="img10">
                         <Picture 
-                            src={srcImg10}
+                            src="/img/pictures/Img10.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img11'>
+
+                    <GalleryContent.Img imgID="img11">
                         <Picture 
-                            src={srcImg11}
+                            src="/img/pictures/Img11.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img12'>
+
+                    <GalleryContent.Img imgID="img12">
                         <Picture 
-                            src={srcImg12}
+                            src="/img/pictures/Img12.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img13'>
+
+                    <GalleryContent.Img imgID="img13">
                         <Picture 
-                            src={srcImg13}
+                            src="/img/pictures/Img13.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img14'>
+
+                    <GalleryContent.Img imgID="img14">
                         <Picture 
-                            src={srcImg14}
+                            src="/img/pictures/Img14.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img15'>
+
+                    <GalleryContent.Img imgID="img15">
                         <Picture 
-                            src={srcImg15}
+                            src="/img/pictures/Img15.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img16'>
+
+                    <GalleryContent.Img imgID="img16">
                         <Picture 
-                            src={srcImg16}
+                            src="/img/pictures/Img16.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img17'>
+
+                    <GalleryContent.Img imgID="img17">
                         <Picture 
-                            src={srcImg17}
+                            src="/img/pictures/Img17.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img18'>
+                    
+                    <GalleryContent.Img imgID="img18">
                         <Picture 
-                            src={srcImg18}
+                            src="/img/pictures/Img18.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img19'>
+
+                    <GalleryContent.Img imgID="img19">
                         <Picture 
-                            src={srcImg19}
+                            src="/img/pictures/Img19.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img20'>
+
+                    <GalleryContent.Img imgID="img20">
                         <Picture 
-                            src={srcImg20}
+                            src="/img/pictures/Img20.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img21'>
+
+                    <GalleryContent.Img imgID="img21">
                         <Picture 
-                            src={srcImg21}
+                            src="/img/pictures/Img21.svg"
                             alt=""
                         />
                     </GalleryContent.Img>
-                    <GalleryContent.Img imgID='img22'>
+
+                    <GalleryContent.Img imgID="img22">
                         <Picture 
-                            src={srcImg22}
+                            src="/img/pictures/Img22.svg"
                             alt=""
                         />
                     </GalleryContent.Img> */}

@@ -10,7 +10,6 @@ import Button from '../src/components/Button';
 import Glitch from '../src/components/Glitch';
 
 
-
 const InitialH2 = styled.h2`
   font-style: italic;
   font-weight: 500;
@@ -39,7 +38,7 @@ export default function Home() {
             <InitialH2>18 Anos</InitialH2>
           </Container.Titles>
           <Button 
-              childrenP='continuar'
+              childrenP={'continuar'}
               imgUrl={'./img/svg/continuar.svg'}
           >
           </Button>

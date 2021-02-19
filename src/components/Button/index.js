@@ -4,7 +4,6 @@ import styled from 'styled-components';
 import Link from '../Link/index';
 import Image from 'next/image';
 
-
 const Button = styled.div`
 `;
 
@@ -29,7 +28,7 @@ const ImgButton = styled.div`
   background-image: url(${(props)=>props.imgUrl});
 `;
 
-export default function ButtonContinue({ childrenP, imgUrl }) {
+export default function ButtonContinue({ childrenP, imgUrl, width, height }) {
   return (
     <Button.NextPage>
       <Link
